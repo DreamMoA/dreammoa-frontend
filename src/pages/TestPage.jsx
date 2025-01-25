@@ -5,6 +5,7 @@ import { useNavigate  } from 'react-router-dom';
 import { authState } from "../recoil/atoms/authState";
 import ToggleButton from "../components/common/ToggleButton";
 import VolumeControl from "../components/common/VolumeControl";
+import getUserApi from "../services/api/getUserApi";
 
 export default function TestPage() {
   const nav = useNavigate();
@@ -49,6 +50,9 @@ export default function TestPage() {
     <div className="border bg-gray-200  dark:bg-gray-700 text-gray-700 dark:text-red-400">
       check
     </div>
+    <button onClick={() => getUserApi.getUserInfo()}>
+      gogogo
+    </button>
     </>
   );
 };

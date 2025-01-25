@@ -14,8 +14,16 @@ export default {
           3: '#DBF2FF',
           4: '#88A9D5',
         },
+        'hmy-blue': {
+          1: '#002B48',
+          2: '#304B6A',
+          3: '#B9CFDA',
+          4: '#728EB3',
+        },
         'my-yellow': '#F9F871',
+        'hmy-yellow': '#E0DF65',
         'my-red' : '#EB3223',
+        'hmy-red' : '#C62A1D',
       }
     },
   },

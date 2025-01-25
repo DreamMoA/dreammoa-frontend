@@ -51,7 +51,7 @@ export const authApi = {
 
       const response = await api.post("/join", formData, {
         headers: {
-          "Content-Type": "multipart/form-data",
+          "Content-Type": "application/json",
         },
       });
 

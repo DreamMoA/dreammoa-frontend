@@ -6,18 +6,22 @@ import AppRoutes from "./routes";
 import Loading from "./components/common/Loading";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
+import SideNavbar from "./components/common/SideNavbar";
 // import TestLayoutPage from './pages/TestLayoutPage';
 
 export default function App() {
   const location = useLocation();
   const hideFooterPaths = ["/join", "/login"];
+  const hideSideNavbarPaths = ["/join", "/login"];
 
   const shouldHideFooter = hideFooterPaths.includes(location.pathname);
+  const shouldHideSideNavbar = hideSideNavbarPaths.includes(location.pathname);
 
   return (
     <RecoilRoot>
       <div className="min-h-screen bg-gray-300 dark:bg-gray-800">
         <Header />
+        {!shouldHideSideNavbar && <SideNavbar />}
         <main className="flex-grow">
           <Suspense fallback={<Loading />}>
             {/* <TestLayoutPage/> */}
