@@ -40,7 +40,7 @@ export default function SideNavbar() {
 
   return (
     <>
-      <motion.div id="innerSideNavbar" className="fixed left-0 top-1/2"
+      <motion.div id="innerSideNavbar" className="fixed left-0 top-1/2 z-40"
         animate={{ x: !isHideSide ? -100 : 0 }}
         transition={{ duration: 0.5 }}
       >
